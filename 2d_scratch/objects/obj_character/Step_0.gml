@@ -2,26 +2,31 @@
 // You can write your code in this editor
 
 
-var _move
+if( v_speed > 0 )
+{
+	jumping = true	
+}
+
+//var _move
 
 if( keyboard_check_direct(vk_left) )
 {
-	//h_speed = -1 * base_h_speed
-	_move = -1
+	h_speed = -1 * base_h_speed
+	//_move = -1
 }
 else if( keyboard_check_direct(vk_right) )
 {
-	//h_speed = 1 * base_h_speed
-	_move = 1
+	h_speed = 1 * base_h_speed
+	//_move = 1
 }
 else
 {
-	//h_speed = 0 * base_h_speed	
-	_move = -sign(h_speed)
+	h_speed = 0 * base_h_speed	
+	//_move = -sign(h_speed)
 }
 //_move *= 2
 
-h_speed += _move
+//h_speed += _move
 
 if( h_speed < -base_h_speed )
 {
@@ -43,10 +48,10 @@ if( keyboard_check_pressed(vk_space) and jumping == false )
 //	jumping = false	
 //}
 
-if( !place_meeting(x + h_speed, y, obj_block) )
-{
-	x += h_speed
-}
+//if( !place_meeting(x + h_speed, y, obj_block) )
+//{
+//	x += h_speed
+//}
 
 if( jumping == true )
 {
@@ -70,10 +75,18 @@ if( v_speed > v_t_gravity )
 
 var _inc = 1;
 
-if( v_speed < 0 )
+_inc = sign(h_speed)
+
+for(var _i = 0; _i < abs(h_speed); _i++)
 {
-	_inc = -1	
+	if( !place_meeting(x + _inc, y, obj_block) )
+	{
+		x += _inc
+	}
 }
+
+_inc = sign(v_speed)
+
 
 for(var _i = 0; _i < abs(v_speed); _i++)
 {
