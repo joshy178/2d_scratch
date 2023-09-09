@@ -2,22 +2,35 @@
 // You can write your code in this editor
 
 
-
+var _move
 
 if( keyboard_check_direct(vk_left) )
 {
-	h_speed = -1 * base_h_speed
+	//h_speed = -1 * base_h_speed
+	_move = -1
 }
 else if( keyboard_check_direct(vk_right) )
 {
-	h_speed = 1 * base_h_speed
+	//h_speed = 1 * base_h_speed
+	_move = 1
 }
 else
 {
-	h_speed = 0 * base_h_speed	
+	//h_speed = 0 * base_h_speed	
+	_move = -sign(h_speed)
 }
+//_move *= 2
 
+h_speed += _move
 
+if( h_speed < -base_h_speed )
+{
+	h_speed = -base_h_speed	
+}
+if( h_speed > base_h_speed )
+{
+	h_speed = base_h_speed	
+}
 
 if( keyboard_check_pressed(vk_space) and jumping == false )
 {
