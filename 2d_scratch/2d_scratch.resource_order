@@ -20,6 +20,6 @@
     {"name":"obj_block","order":1,"path":"objects/obj_block/obj_block.yy",},
     {"name":"Sprite4","order":16,"path":"sprites/Sprite4/Sprite4.yy",},
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
-    {"name":"spr_char","order":2,"path":"sprites/spr_char/spr_char.yy",},
+    {"name":"spr_r","order":2,"path":"sprites/spr_r/spr_r.yy",},
   ],
 }

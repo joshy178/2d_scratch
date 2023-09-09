@@ -42,7 +42,7 @@ if( jumping == true )
 
 if( jump_amt > jump_height or jumping == false )
 {
-	v_speed += 2
+	v_speed += 1
 }
 	
 if( v_speed > v_t_gravity )
@@ -72,10 +72,10 @@ for(var _i = 0; _i < abs(v_speed); _i++)
 
 if( h_speed > 0 )
 {
-	sprite_index = spr_char
+	sprite_index = spr_r
 }
 else if ( h_speed < 0 )
 {
-	sprite_index = Sprite1_L
+	sprite_index = spr_l
 
 }

@@ -36,10 +36,10 @@
   "resources": [
     {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
-    {"id":{"name":"Sprite1_L","path":"sprites/Sprite1_L/Sprite1_L.yy",},},
+    {"id":{"name":"spr_l","path":"sprites/spr_l/spr_l.yy",},},
     {"id":{"name":"Sprite4","path":"sprites/Sprite4/Sprite4.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
-    {"id":{"name":"spr_char","path":"sprites/spr_char/spr_char.yy",},},
+    {"id":{"name":"spr_r","path":"sprites/spr_r/spr_r.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

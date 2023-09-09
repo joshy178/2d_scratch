@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_char",
-    "path": "sprites/spr_char/spr_char.yy",
+    "name": "spr_r",
+    "path": "sprites/spr_r/spr_r.yy",
   },
   "spriteMaskId": null,
   "visible": true,
