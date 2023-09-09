@@ -25,7 +25,10 @@ if( keyboard_check_pressed(vk_space) and jumping == false )
 	jump_amt = 0
 	v_speed = j_speed
 }
-
+else if( !keyboard_check_direct(vk_space) )
+{
+	jumping = false	
+}
 
 if( !place_meeting(x + h_speed, y, obj_block) )
 {
@@ -40,11 +43,16 @@ if( jumping == true )
 
 //v_speed += 5
 
-if( jump_amt > jump_height or jumping == false )
+if( jump_amt > jump_height )
 {
 	v_speed += 1
 }
-	
+else if( jumping == false )
+{
+	v_speed += 1
+}
+
+
 if( v_speed > v_t_gravity )
 {
 	v_speed = v_t_gravity
