@@ -11,6 +11,6 @@ v_t_gravity = 12
 j_speed = -10
 down = 5
 
-jump_height = 100
+jump_height = 120
 jump_amt = 0
 jumping = false

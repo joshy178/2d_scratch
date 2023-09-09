@@ -25,10 +25,10 @@ if( keyboard_check_pressed(vk_space) and jumping == false )
 	jump_amt = 0
 	v_speed = j_speed
 }
-else if( !keyboard_check_direct(vk_space) )
-{
-	jumping = false	
-}
+//else if( !keyboard_check_direct(vk_space) )
+//{
+//	jumping = false	
+//}
 
 if( !place_meeting(x + h_speed, y, obj_block) )
 {
@@ -43,14 +43,11 @@ if( jumping == true )
 
 //v_speed += 5
 
-if( jump_amt > jump_height )
+if( jump_amt > jump_height or !keyboard_check_direct(vk_space) )
 {
 	v_speed += 1
 }
-else if( jumping == false )
-{
-	v_speed += 1
-}
+
 
 
 if( v_speed > v_t_gravity )
@@ -73,7 +70,11 @@ for(var _i = 0; _i < abs(v_speed); _i++)
 	}
 	else
 	{
-	jumping = false	
+	if( _inc > 0 )
+	{
+		jumping = false
+	}
+	jump_amt = jump_height + 1
 	v_speed = 0
 	}
 }
