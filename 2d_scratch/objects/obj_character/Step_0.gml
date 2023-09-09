@@ -71,10 +71,11 @@ for(var _i = 0; _i < abs(v_speed); _i++)
 }
 
 if( h_speed > 0 )
-
-	object_set_sprite()
+{
+	sprite_index = spr_char
 }
 else if ( h_speed < 0 )
 {
-	image_xscale = 1
+	sprite_index = Sprite1_L
+
 }
