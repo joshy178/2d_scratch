@@ -17,9 +17,12 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spr_bush","order":3,"path":"sprites/spr_bush/spr_bush.yy",},
+    {"name":"Sprite6","order":1,"path":"sprites/Sprite6/Sprite6.yy",},
     {"name":"obj_block","order":1,"path":"objects/obj_block/obj_block.yy",},
     {"name":"Sprite4","order":16,"path":"sprites/Sprite4/Sprite4.yy",},
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
     {"name":"spr_r","order":2,"path":"sprites/spr_r/spr_r.yy",},
+    {"name":"obj_bush","order":2,"path":"objects/obj_bush/obj_bush.yy",},
   ],
 }
