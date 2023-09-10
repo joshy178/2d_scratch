@@ -18,9 +18,10 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_bush","order":3,"path":"sprites/spr_bush/spr_bush.yy",},
-    {"name":"Sprite6","order":1,"path":"sprites/Sprite6/Sprite6.yy",},
+    {"name":"spr_sky","order":4,"path":"sprites/spr_sky/spr_sky.yy",},
     {"name":"obj_char_debug","order":3,"path":"objects/obj_char_debug/obj_char_debug.yy",},
     {"name":"obj_block","order":1,"path":"objects/obj_block/obj_block.yy",},
+    {"name":"obj_background","order":4,"path":"objects/obj_background/obj_background.yy",},
     {"name":"Sprite4","order":16,"path":"sprites/Sprite4/Sprite4.yy",},
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
     {"name":"spr_r","order":2,"path":"sprites/spr_r/spr_r.yy",},
