@@ -71,7 +71,7 @@ for(var _i = 0; _i < abs(h_speed); _i++)
 	else
 	{
 		run_dist = 0
-		h_speed = 0
+		//h_speed = 0
 	}
 }
 
@@ -160,7 +160,7 @@ for(var _i = 0; _i < abs(v_speed); _i++)
 		{
 			jumping = false
 		}
-		jump_amt = jump_height + 1
+		jump_amt = _h_check + 1
 		v_speed = 0
 	}
 }
