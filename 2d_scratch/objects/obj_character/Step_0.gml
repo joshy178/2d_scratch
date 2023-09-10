@@ -9,11 +9,47 @@
 
 //var _move
 
-if( keyboard_check(ord("A")) and jumping = false )
+#macro X_BUTTON gp_face3
+#macro A_BUTTON gp_face1
+
+
+function _run_button()
+{
+	return keyboard_check(ord("Z")) or gamepad_button_check(0, X_BUTTON)
+}
+
+function _run_released() {
+	return keyboard_check_released(ord("Z")) or gamepad_button_check_released(0, X_BUTTON)
+}
+
+function _check_left()
+{
+	return keyboard_check_direct(vk_left) or gamepad_axis_value(0, gp_axislh) < -.5
+}
+
+function _check_right()
+{
+	return keyboard_check_direct(vk_right) or gamepad_axis_value(0, gp_axislh) > .5
+}
+
+
+function _check_jump_pressed()
+{
+	return keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0, A_BUTTON)
+}
+
+function _check_jump()
+{
+	return keyboard_check_direct(vk_space) or gamepad_button_check(0, A_BUTTON)
+}
+
+
+
+if( _run_button() and jumping = false )
 {
 	is_running = true
 }
-if( keyboard_check_released(ord("A")) )
+if( _run_released() )
 {
 	run_dist = 0
 	is_running = false
@@ -35,12 +71,12 @@ else
 	_speed = base_h_speed
 }
 
-if( keyboard_check_direct(vk_left) )
+if( _check_left() )
 {
 	h_speed = -1 * _speed
 	//_move = -1
 }
-else if( keyboard_check_direct(vk_right) )
+else if( _check_right() )
 {
 	h_speed = 1 * _speed
 	//_move = 1
@@ -101,7 +137,7 @@ else if ( h_speed < 0 )
 //	h_speed = base_h_speed	
 //}
 
-if( keyboard_check_pressed(vk_space) and jumping == false )
+if( _check_jump_pressed() and jumping == false )
 {
 	jumping = true
 	jump_amt = 0
@@ -131,7 +167,7 @@ if( _speed == max_h_speed )
 	_h_check = run_jump_height
 }
 
-if( jump_amt > _h_check or !keyboard_check_direct(vk_space) )
+if( jump_amt > _h_check or !_check_jump() )
 {
 	v_speed += 1
 }
