@@ -18,6 +18,7 @@ j_speed = -10
 down = 5
 
 jump_height = 120
+run_jump_height = 150
 jump_amt = 0
 jumping = false
 in_air = false

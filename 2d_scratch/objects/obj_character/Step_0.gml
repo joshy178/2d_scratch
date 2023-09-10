@@ -125,7 +125,13 @@ if( jumping == true )
 
 //v_speed += 5
 
-if( jump_amt > jump_height or !keyboard_check_direct(vk_space) )
+var _h_check = jump_height
+if( _speed == max_h_speed )
+{
+	_h_check = run_jump_height
+}
+
+if( jump_amt > _h_check or !keyboard_check_direct(vk_space) )
 {
 	v_speed += 1
 }
