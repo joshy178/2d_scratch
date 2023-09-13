@@ -40,6 +40,7 @@
     {"id":{"name":"obj_char_debug","path":"objects/obj_char_debug/obj_char_debug.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_background","path":"objects/obj_background/obj_background.yy",},},
+    {"id":{"name":"spr_rain","path":"sprites/spr_rain/spr_rain.yy",},},
     {"id":{"name":"spr_l","path":"sprites/spr_l/spr_l.yy",},},
     {"id":{"name":"Sprite4","path":"sprites/Sprite4/Sprite4.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},

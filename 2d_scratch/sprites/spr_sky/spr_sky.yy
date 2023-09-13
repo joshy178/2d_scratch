@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_sky",
-  "bbox_bottom": 383,
+  "bbox_bottom": 767,
   "bbox_left": 0,
-  "bbox_right": 682,
+  "bbox_right": 1365,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"64b84ff6-8fd6-41ca-887c-50fa09bd8fb3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f764f777-6350-4897-a2ef-9673ba2947eb",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 384,
+  "height": 768,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f38c8274-812b-437c-b766-9b6ab40260bd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0ae34e78-90c8-445c-a583-b27f1578eaf4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"64b84ff6-8fd6-41ca-887c-50fa09bd8fb3","path":"sprites/spr_sky/spr_sky.yy",},},},"Disabled":false,"id":"62dbe6db-4eec-430f-988f-f853dc73ea87","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f764f777-6350-4897-a2ef-9673ba2947eb","path":"sprites/spr_sky/spr_sky.yy",},},},"Disabled":false,"id":"a7bba1a5-a14a-4734-b83e-123487f15aa7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 683,
+  "width": 1366,
 }
